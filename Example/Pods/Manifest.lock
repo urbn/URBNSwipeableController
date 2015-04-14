@@ -1,0 +1,17 @@
+PODS:
+  - FBSnapshotTestCase (1.6)
+  - URBNSwipeableController (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - URBNSwipeableController (from `../`)
+
+EXTERNAL SOURCES:
+  URBNSwipeableController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 9d5fe43b29ae3a0ed8fc829477971b281038f748
+  URBNSwipeableController: 89e29fd8ef71fcbd9a04961d1324128458931bd2
+
+COCOAPODS: 0.36.3
