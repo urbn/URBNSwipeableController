@@ -157,7 +157,7 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
 #pragma mark - Getters
 - (CGFloat)basementWidth {
     // TOOD:  Decide if we ever want to show more/less than the size of our basmentView;
-    return [self.basementView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].width;
+    return self.basementView.frame.size.width;
 }
 
 #pragma mark - UIScrollViewDelegate
@@ -182,6 +182,7 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
     else {
         // slide view
         self.basementView.hidden = NO;
+        [self basementDidDisappear];
         self.basementView.frame = CGRectMake(CGRectGetMaxX(self.scrollContentView.frame),
                                              0.0f,
                                              [self basementWidth],
@@ -195,6 +196,7 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
     }
     else if (_scrollView.contentOffset.x == 0.f) {
         _basementView.hidden = YES;
+        [self basementDidDisappear];
     }
 }
 
@@ -294,6 +296,8 @@ static NSString * kURBNSwipeableActionKey = @"kURBNSwipeableActionKey";
 
 - (void)addAction:(URBNSwipeableAction *)action withStyleHandler:(URBNSwipeableActionStyleHandler)handler {
     UIButton *actionButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [actionButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    actionButton.titleLabel.font = [UIFont boldSystemFontOfSize:16.f];
     actionButton.autoresizingMask = UIViewAutoresizingFlexibleHeight;
     [actionButton setTitle:action.title forState:UIControlStateNormal];
     [actionButton.layer setValue:action forKey:kURBNSwipeableActionKey];
@@ -301,7 +305,9 @@ static NSString * kURBNSwipeableActionKey = @"kURBNSwipeableActionKey";
     if (handler) {
         handler(actionButton);
     }
-    [actionButton sizeToFit];
+    CGRect frame = CGRectMake(0, 0, 200.f, self.basementView.frame.size.height);
+    frame.size.width = [actionButton sizeThatFits:CGSizeMake(MAXFLOAT, self.basementView.frame.size.height)].width + actionButton.titleEdgeInsets.left + actionButton.titleEdgeInsets.right;
+    actionButton.frame = frame;
     [self.basementView addSubview:actionButton];
     
     CGFloat xOff = 0.f;
@@ -312,6 +318,7 @@ static NSString * kURBNSwipeableActionKey = @"kURBNSwipeableActionKey";
     CGRect rect = self.basementView.frame;
     rect.size.width = xOff;
     self.basementView.frame = rect;
+    [self updateLayout];
 }
 
 #pragma mark - Hanlder

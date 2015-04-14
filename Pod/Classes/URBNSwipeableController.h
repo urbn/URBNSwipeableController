@@ -6,10 +6,13 @@
 //
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
+@import UIKit;
 
-@import UIKit.UIView;
-@import UIKit.UIScrollView;
+#import "UIView+SwiperController.h"
+#import "URBNSwipeableCollectionViewCell.h"
+#import "URBNSwipeableTableViewCell.h"
+
 
 @class URBNSwipeableAction;
 
@@ -57,6 +60,7 @@ typedef void(^URBNSwipeableActionStyleHandler)(UIButton *handler);
 - (void)addAction:(URBNSwipeableAction *)action withStyleHandler:(URBNSwipeableActionStyleHandler)handler;
 
 @end
+
 
 
 /**
