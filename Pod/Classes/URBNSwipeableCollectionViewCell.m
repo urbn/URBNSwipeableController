@@ -13,7 +13,7 @@
 @implementation URBNSwipeableCollectionViewCell
 
 - (void)sharedInit {
-    [self.contentView swiperize];
+    [self.contentView urbn_swiperize];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -32,7 +32,7 @@
 #pragma mark - Layout
 - (void)layoutSubviews {
     [super layoutSubviews];
-    [self.contentView.swiperController updateLayout];
+    [self.contentView.urbn_swiperController updateLayout];
 }
 
 @end

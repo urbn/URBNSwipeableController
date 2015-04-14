@@ -14,7 +14,7 @@
 @implementation URBNSwipeableTableViewCell
 
 - (void)sharedInit {
-    [self.contentView swiperize];
+    [self.contentView urbn_swiperize];
 }
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
@@ -32,7 +32,7 @@
 
 #pragma mark - Selection Override
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    if (![self.contentView.swiperController isShowingBasement]) {
+    if (![self.contentView.urbn_swiperController isShowingBasement]) {
         [super setSelected:selected animated:animated];
     }
 }
@@ -40,7 +40,7 @@
 #pragma mark - Layout
 - (void)layoutSubviews {
     [super layoutSubviews];
-    [self.contentView.swiperController updateLayout];
+    [self.contentView.urbn_swiperController updateLayout];
 }
 
 @end
