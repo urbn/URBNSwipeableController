@@ -15,11 +15,11 @@
 /**
  *  A reference to the swiperController if view is swiperized
  */
-@property (nonatomic, strong, readonly) URBNSwipeableController *swiperController;
+@property (nonatomic, strong, readonly) URBNSwipeableController *urbn_swiperController;
 
 /**
  *  Call this on any view to swiperize it
  */
-- (URBNSwipeableController *)swiperize;
+- (URBNSwipeableController *)urbn_swiperize;
 
 @end

@@ -14,23 +14,33 @@
 
 static NSString * kUIViewSwiperControllerKey = @"kUIViewSwiperControllerKey";
 
-- (URBNSwipeableController *)swiperize {
-    [self setSwiperController:[URBNSwipeableController swiperCellWithContainer:self]];
-    [self.swiperController updateLayout];
-    return [self swiperController];
+- (URBNSwipeableController *)urbn_swiperize {
+    
+    // Do not swiperize if we're alredy swiperized.
+    if (self.urbn_swiperController) {
+        return self.urbn_swiperController;
+    }
+    
+    /**
+     *  Create our swiperController and assign it to our property.
+     */
+    URBNSwipeableController *c = [URBNSwipeableController swiperCellWithContainer:self];
+    [self setUrbn_swiperController:c];
+    return c;
 }
 
+// Make sure we relayout when we move to superView.
 - (void)didMoveToSuperview {
-    [self.swiperController updateLayout];
+    [self.urbn_swiperController updateLayout];
 }
 
 #pragma mark - Getters 
-- (URBNSwipeableController *)swiperController {
+- (URBNSwipeableController *)urbn_swiperController {
     return [self.layer valueForKey:kUIViewSwiperControllerKey];
 }
 
 #pragma mark - Setters
-- (void)setSwiperController:(URBNSwipeableController *)swiperController {
+- (void)setUrbn_swiperController:(URBNSwipeableController *)swiperController {
     [self.layer setValue:swiperController forKey:kUIViewSwiperControllerKey];
 }
 
