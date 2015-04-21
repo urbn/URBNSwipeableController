@@ -14,8 +14,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.swiperView1 swiperize];
-    [self.swiperView2 swiperize];
+    [self.swiperView1 urbn_swiperize];
+    [self.swiperView2 urbn_swiperize];
 }
 
 @end
