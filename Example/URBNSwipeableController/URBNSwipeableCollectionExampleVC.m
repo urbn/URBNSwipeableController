@@ -20,7 +20,7 @@
     CGFloat delay = 0.f;
     for (UITableViewCell *cell in [self.collectionView visibleCells]) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [cell.contentView.swiperController openBasementAnimated:YES];
+            [cell.contentView.urbn_swiperController openBasementAnimated:YES];
         });
         delay += 0.25f;
     }
@@ -35,7 +35,7 @@
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"swipeCell" forIndexPath:indexPath];
     
     typeof(self) __weak __self = self;
-    [cell.contentView.swiperController addAction:[URBNSwipeableAction actionWithTitle:@"EDIT" withHandler:^(URBNSwipeableAction *action) {
+    [cell.contentView.urbn_swiperController addAction:[URBNSwipeableAction actionWithTitle:@"EDIT" withHandler:^(URBNSwipeableAction *action) {
         [__self alertWithAction:action withIndexPath:indexPath];
     }] withStyleHandler:^(UIButton *handler) {
         [handler setBackgroundColor:[UIColor orangeColor]];
