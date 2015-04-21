@@ -73,8 +73,8 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
     
     [self.container addSubview:sv];
     NSDictionary *views = NSDictionaryOfVariableBindings(sv, cv, bv);
-    [self.container addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[sv]|" options:0 metrics:nil views:views]];
-    [self.container addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[sv]|" options:0 metrics:nil views:views]];
+    [self.container addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[sv]-|" options:0 metrics:nil views:views]];
+    [self.container addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[sv]-|" options:0 metrics:nil views:views]];
     
     [self updateLayout];
     
