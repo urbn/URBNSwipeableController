@@ -37,9 +37,9 @@
  *  This is just a storage component to help with performance.   Use it to determine if you
  *  need to setup your basement or not.
  */
-@property (nonatomic, assign, getter=isBasementConfigured) BOOL basementConfigured;
+@property (nonatomic, assign, getter = isBasementConfigured) BOOL basementConfigured;
 
-@property (nonatomic, assign, readonly) BOOL isShowingBasement;
+@property (nonatomic, assign, readonly, getter = isShowingBasement) BOOL showingBasement;
 
 /**
  *  Create a new swiper controller using the given view.
