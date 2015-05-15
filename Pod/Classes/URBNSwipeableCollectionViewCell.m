@@ -8,10 +8,10 @@
 
 #import "URBNSwipeableCollectionViewCell.h"
 #import "UIView+SwiperController.h"
-#import "URBNSwipeableController.h"
 
 @implementation URBNSwipeableCollectionViewCell
 
+#pragma mark - Init
 - (void)sharedInit {
     [self.contentView urbn_swiperize];
 }
@@ -29,10 +29,33 @@
     [self sharedInit];
 }
 
+#pragma mark - Selection Override
+- (void)setHighlighted:(BOOL)highlighted {
+    if (![[self swipeController] isShowingBasement]) {
+        [super setHighlighted:highlighted];
+    }
+}
+
+- (void)setSelected:(BOOL)selected {
+    if (![[self swipeController] isShowingBasement]) {
+        [super setSelected:selected];
+    }
+}
+
+#pragma mark - Getters
+- (URBNSwipeableController *)swipeController{
+    return self.contentView.urbn_swiperController;
+}
+
 #pragma mark - Layout
 - (void)layoutSubviews {
     [super layoutSubviews];
-    [self.contentView.urbn_swiperController updateLayout];
+    [[self swipeController] updateLayout];
+}
+
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    [[self swipeController] closeBasementAnimated:NO];
 }
 
 @end

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "URBNSwipeableController.h"
 
 @interface URBNSwipeableTableViewCell : UITableViewCell
+
+- (URBNSwipeableController *)swipeController;
 
 @end
