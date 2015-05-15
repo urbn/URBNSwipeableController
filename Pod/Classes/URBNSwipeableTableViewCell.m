@@ -8,11 +8,10 @@
 
 #import "URBNSwipeableTableViewCell.h"
 #import "UIView+SwiperController.h"
-#import "URBNSwipeableController.h"
-
 
 @implementation URBNSwipeableTableViewCell
 
+#pragma mark - Init
 - (void)sharedInit {
     [self.contentView urbn_swiperize];
 }
@@ -32,15 +31,31 @@
 
 #pragma mark - Selection Override
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    if (![self.contentView.urbn_swiperController isShowingBasement]) {
+    if (![[self swipeController] isShowingBasement]) {
         [super setSelected:selected animated:animated];
     }
+}
+
+- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated {
+    if (![[self swipeController] isShowingBasement]) {
+        [super setHighlighted:highlighted animated:animated];
+    }
+}
+
+#pragma mark - Getters
+- (URBNSwipeableController *)swipeController{
+    return self.contentView.urbn_swiperController;
 }
 
 #pragma mark - Layout
 - (void)layoutSubviews {
     [super layoutSubviews];
-    [self.contentView.urbn_swiperController updateLayout];
+    [[self swipeController] updateLayout];
+}
+
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    [[self swipeController] closeBasementAnimated:NO];
 }
 
 @end

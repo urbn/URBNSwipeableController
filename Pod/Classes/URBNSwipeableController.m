@@ -22,7 +22,7 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
 
 @property (nonatomic, assign) CGPoint startPoint;
 
-@property (nonatomic, assign, readwrite, getter=isShowingBasement) BOOL showingBasement;
+@property (nonatomic, assign, readwrite, getter = isShowingBasement) BOOL showingBasement;
 @end
 
 @implementation URBNSwipeableController
