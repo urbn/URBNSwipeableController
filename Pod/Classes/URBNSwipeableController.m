@@ -69,12 +69,15 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
     self.scrollView = sv;
     self.scrollContentView = cv;
     
+    sv.layoutMargins = self.container.layoutMargins;
+    self.container.layoutMargins = UIEdgeInsetsZero;
+    
     [self moveViewsWithConstraints:self.container toView:cv];
     
     [self.container addSubview:sv];
     NSDictionary *views = NSDictionaryOfVariableBindings(sv, cv, bv);
-    [self.container addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[sv]-|" options:0 metrics:nil views:views]];
-    [self.container addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[sv]-|" options:0 metrics:nil views:views]];
+    [self.container addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[sv]|" options:0 metrics:nil views:views]];
+    [self.container addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[sv]|" options:0 metrics:nil views:views]];
     
     [self updateLayout];
     
