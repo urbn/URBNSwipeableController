@@ -35,6 +35,10 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
     return cell;
 }
 
++ (void)closeBasements {
+    [[NSNotificationCenter defaultCenter] postNotificationName:kSwiperControllerCloseAllKey object:self];
+}
+
 - (void)openBasementAnimated:(BOOL)animated {
     [self.scrollView setContentOffset:CGPointMake([self basementWidth], 0) animated:animated];
     [self basementDidAppear];
