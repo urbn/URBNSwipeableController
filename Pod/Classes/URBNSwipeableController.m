@@ -96,6 +96,8 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
 }
 
 - (void)setupNotifications {
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateLayout) name:UIDeviceOrientationDidChangeNotification object:[UIDevice currentDevice]];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(closeBasementNotification:) name:kSwiperControllerCloseAllKey object:nil];
 }
 
