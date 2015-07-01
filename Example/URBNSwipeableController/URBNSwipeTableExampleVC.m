@@ -53,4 +53,9 @@
     [ac addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
     [self presentViewController:ac animated:YES completion:nil];
 }
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    [URBNSwipeableController closeBasements];
+}
+
 @end
