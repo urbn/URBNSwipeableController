@@ -191,7 +191,6 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
     else {
         // slide view
         self.basementView.hidden = NO;
-        //[self basementDidAppear];
         self.basementView.frame = CGRectMake(CGRectGetMaxX(self.scrollContentView.frame),
                                              0.0f,
                                              [self basementWidth],
