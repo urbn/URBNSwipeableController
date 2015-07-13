@@ -10,6 +10,9 @@
 #import "URBNSwipeableController.h"
 @import QuartzCore.CALayer;
 
+NSString * const kSwiperControllerBasementDidAppear = @"kSwiperControllerBasementDidAppear";
+NSString * const kSwiperControllerBasementDidDisappear = @"kSwiperControllerBasementDidDisappear";
+
 @implementation UIView (SwiperController)
 
 static NSString * kUIViewSwiperControllerKey = @"kUIViewSwiperControllerKey";
