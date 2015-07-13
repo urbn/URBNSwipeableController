@@ -191,7 +191,7 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
     else {
         // slide view
         self.basementView.hidden = NO;
-        [self basementDidDisappear];
+        //[self basementDidAppear];
         self.basementView.frame = CGRectMake(CGRectGetMaxX(self.scrollContentView.frame),
                                              0.0f,
                                              [self basementWidth],
@@ -227,6 +227,8 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
         self.showingBasement =
         self.scrollView.userInteractionEnabled = NO;
         self.panGesture.enabled = YES;
+
+        [[NSNotificationCenter defaultCenter] postNotificationName:kSwiperControllerBasementDidDisappear object:self];
     }
 }
 
@@ -237,6 +239,8 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
         self.showingBasement =
         self.scrollView.userInteractionEnabled = YES;
         self.panGesture.enabled = NO;
+
+        [[NSNotificationCenter defaultCenter] postNotificationName:kSwiperControllerBasementDidAppear object:self];
     }
 }
 

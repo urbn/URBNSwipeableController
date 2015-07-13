@@ -10,6 +10,9 @@
 
 @class URBNSwipeableController;
 
+extern NSString * const kSwiperControllerBasementDidAppear;
+extern NSString * const kSwiperControllerBasementDidDisappear;
+
 @interface UIView (SwiperController)
 
 /**
