@@ -11,6 +11,8 @@
 
 @interface URBNSwipeableCollectionViewCell : UICollectionViewCell
 
+- (void)sharedInit;
+
 - (URBNSwipeableController *)swipeController;
 
 @end

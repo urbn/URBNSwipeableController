@@ -11,6 +11,8 @@
 
 @interface URBNSwipeableTableViewCell : UITableViewCell
 
+- (void)sharedInit;
+
 - (URBNSwipeableController *)swipeController;
 
 @end
