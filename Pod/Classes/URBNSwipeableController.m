@@ -57,7 +57,7 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
     sv.directionalLockEnabled = YES;
     sv.scrollEnabled = YES;
     sv.delegate = self;
-    sv.userInteractionEnabled = NO;
+    sv.userInteractionEnabled = self.allowsUserInteractionInScrollView;
     sv.translatesAutoresizingMaskIntoConstraints = NO;
     sv.autoresizesSubviews = YES;
     
@@ -141,7 +141,7 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
         case UIGestureRecognizerStateCancelled:
         case UIGestureRecognizerStateFailed: {
             [_scrollView setContentOffset: CGPointZero animated: YES];
-            _scrollView.userInteractionEnabled = NO;
+            _scrollView.userInteractionEnabled = self.allowsUserInteractionInScrollView;
         } break;
             
         default:
@@ -224,9 +224,9 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
     if ([self isShowingBasement]) {
         // From this point the scrollView should take over interactions
         self.showingBasement =
-        self.scrollView.userInteractionEnabled = NO;
+        self.scrollView.userInteractionEnabled = self.allowsUserInteractionInScrollView;
         self.panGesture.enabled = YES;
-
+        
         [[NSNotificationCenter defaultCenter] postNotificationName:kSwiperControllerBasementDidDisappear object:self];
     }
 }
@@ -238,9 +238,14 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
         self.showingBasement =
         self.scrollView.userInteractionEnabled = YES;
         self.panGesture.enabled = NO;
-
+        
         [[NSNotificationCenter defaultCenter] postNotificationName:kSwiperControllerBasementDidAppear object:self];
     }
+}
+
+- (void)setAllowsUserInteractionInScrollView:(BOOL)allowsUserInteractionInScrollView {
+    _allowsUserInteractionInScrollView = allowsUserInteractionInScrollView;
+    self.scrollView.userInteractionEnabled = allowsUserInteractionInScrollView;
 }
 
 /**
@@ -251,7 +256,7 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
  *  @param newView  The new view that all the subviews should be added to
  */
 - (void)moveViewsWithConstraints:(UIView *)contentView toView:(UIView *)newView {
-
+    
     NSArray *constraints = [contentView constraints];
     NSMutableArray *newConstraints = [@[] mutableCopy];
     

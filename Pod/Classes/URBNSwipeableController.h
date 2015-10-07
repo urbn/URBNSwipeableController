@@ -21,6 +21,7 @@
 @property (nonatomic, strong, readonly) UIScrollView *scrollView;
 @property (nonatomic, strong, readonly) UIView *scrollContentView;
 @property (nonatomic, strong, readonly) UIView *basementView;
+@property (nonatomic, assign, readwrite) BOOL allowsUserInteractionInScrollView;
 
 /**
  *  Used by swipeable controller when opening the drawer
@@ -64,7 +65,7 @@ typedef void(^URBNSwipeableActionStyleHandler)(UIButton *handler);
 
 
 /**
- *  This can be used for easy setup of the basementView.   Using 
+ *  This can be used for easy setup of the basementView.   Using
  *  these actions will give an effect similar to UITableViewRowAction's
  */
 typedef void(^URBNSwipeableActionHandler)(URBNSwipeableAction *action);
