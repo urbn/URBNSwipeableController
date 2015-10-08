@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'URBNSwipeableController'
-  s.version          = '0.2.1'
+  s.version          = '0.2.2'
   s.summary          = 'URBNSwipeableController allows you to add swiping to any tableviewcell, collectionviewcell, or any old view.'
   s.homepage         = 'https://github.com/urbn/URBNDataSource'
   s.license          = 'MIT'
