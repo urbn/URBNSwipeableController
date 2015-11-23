@@ -163,10 +163,18 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
     self.scrollContentView.frame = CGRectMake(0, 0, w, h);
 }
 
-#pragma mark - Getters
+#pragma mark - Getters / Setters
 - (CGFloat)basementWidth {
     // TOOD:  Decide if we ever want to show more/less than the size of our basmentView;
     return self.basementView.frame.size.width;
+}
+
+- (void)setSwiperNoSwiping:(BOOL)swiperNoSwiping {
+    _swiperNoSwiping = swiperNoSwiping;
+    
+    // Need to still be able to detect touches on subviews of the scrollView, but do not allowing scrolling
+    self.scrollView.scrollEnabled = !swiperNoSwiping;
+    self.scrollView.userInteractionEnabled = swiperNoSwiping;
 }
 
 #pragma mark - UIScrollViewDelegate
