@@ -171,10 +171,7 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
 
 - (void)setSwiperNoSwiping:(BOOL)swiperNoSwiping {
     _swiperNoSwiping = swiperNoSwiping;
-    
-    // Need to still be able to detect touches on subviews of the scrollView, but do not allowing scrolling
     self.scrollView.scrollEnabled = !swiperNoSwiping;
-    self.scrollView.userInteractionEnabled = swiperNoSwiping;
 }
 
 #pragma mark - UIScrollViewDelegate
