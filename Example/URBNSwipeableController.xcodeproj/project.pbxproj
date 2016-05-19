@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4715A95E76CF5A2EFE688F76 /* libPods-URBNSwipeableController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A38C787771472B333455F775 /* libPods-URBNSwipeableController.a */; };
+		043328ED5CC0083D42E79AB5 /* libPods-URBNSwipeableController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F10AF7B6694D3BE766D70398 /* libPods-URBNSwipeableController.a */; };
+		1F90BC4D502C1A84A445F7BF /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1B812C22FAB567882D3F8E /* libPods-Tests.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,7 +23,6 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		69CA4772703C106A8D03E4E3 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A21A6A005EFDF0159FA8018D /* libPods-Tests.a */; };
 		D8D246CF1ADD6A9D00E6CD44 /* URBNSwipeTableExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D246CE1ADD6A9D00E6CD44 /* URBNSwipeTableExampleVC.m */; };
 		D8D246D61ADD716F00E6CD44 /* URBNSwipeableCollectionExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D246D51ADD716F00E6CD44 /* URBNSwipeableCollectionExampleVC.m */; };
 /* End PBXBuildFile section */
@@ -38,7 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4E97CF9EDF38F12024FE461F /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		0D9F92461CA5875A1A9C564D /* Pods-URBNSwipeableController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNSwipeableController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-URBNSwipeableController/Pods-URBNSwipeableController.debug.xcconfig"; sourceTree = "<group>"; };
+		1542BD3C44A731B2EDB3BD28 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2365B92EC61BD8E62B1608F3 /* Pods-URBNSwipeableController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNSwipeableController.release.xcconfig"; path = "Pods/Target Support Files/Pods-URBNSwipeableController/Pods-URBNSwipeableController.release.xcconfig"; sourceTree = "<group>"; };
 		5D65E12571FFB14847356C5E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* URBNSwipeableController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URBNSwipeableController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,17 +62,15 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6391A4CCBEEB1E52EA60DEED /* Pods-URBNSwipeableController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNSwipeableController.release.xcconfig"; path = "Pods/Target Support Files/Pods-URBNSwipeableController/Pods-URBNSwipeableController.release.xcconfig"; sourceTree = "<group>"; };
-		7D9FE74E76FCA0A2BB18C0F1 /* Pods-URBNSwipeableController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URBNSwipeableController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-URBNSwipeableController/Pods-URBNSwipeableController.debug.xcconfig"; sourceTree = "<group>"; };
 		8F499F22A08C3984F397A2AB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		A21A6A005EFDF0159FA8018D /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A38C787771472B333455F775 /* libPods-URBNSwipeableController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-URBNSwipeableController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1B812C22FAB567882D3F8E /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25ECF641824DE8D12D0F258 /* URBNSwipeableController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = URBNSwipeableController.podspec; path = ../URBNSwipeableController.podspec; sourceTree = "<group>"; };
 		D8D246CD1ADD6A9D00E6CD44 /* URBNSwipeTableExampleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URBNSwipeTableExampleVC.h; sourceTree = "<group>"; };
 		D8D246CE1ADD6A9D00E6CD44 /* URBNSwipeTableExampleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URBNSwipeTableExampleVC.m; sourceTree = "<group>"; };
 		D8D246D41ADD716F00E6CD44 /* URBNSwipeableCollectionExampleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URBNSwipeableCollectionExampleVC.h; sourceTree = "<group>"; };
 		D8D246D51ADD716F00E6CD44 /* URBNSwipeableCollectionExampleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URBNSwipeableCollectionExampleVC.m; sourceTree = "<group>"; };
-		FEF7181DA52B720574AFF78A /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F10AF7B6694D3BE766D70398 /* libPods-URBNSwipeableController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-URBNSwipeableController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5890E193768FCF95FBB6B72 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				4715A95E76CF5A2EFE688F76 /* libPods-URBNSwipeableController.a in Frameworks */,
+				043328ED5CC0083D42E79AB5 /* libPods-URBNSwipeableController.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +92,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				69CA4772703C106A8D03E4E3 /* libPods-Tests.a in Frameworks */,
+				1F90BC4D502C1A84A445F7BF /* libPods-Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +107,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				D5A8E99178B0864DE8CFDC17 /* Pods */,
+				C96EBBA7963A7F562675E085 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,8 +127,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				A21A6A005EFDF0159FA8018D /* libPods-Tests.a */,
-				A38C787771472B333455F775 /* libPods-URBNSwipeableController.a */,
+				BE1B812C22FAB567882D3F8E /* libPods-Tests.a */,
+				F10AF7B6694D3BE766D70398 /* libPods-URBNSwipeableController.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -191,13 +191,13 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		D5A8E99178B0864DE8CFDC17 /* Pods */ = {
+		C96EBBA7963A7F562675E085 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FEF7181DA52B720574AFF78A /* Pods-Tests.debug.xcconfig */,
-				4E97CF9EDF38F12024FE461F /* Pods-Tests.release.xcconfig */,
-				7D9FE74E76FCA0A2BB18C0F1 /* Pods-URBNSwipeableController.debug.xcconfig */,
-				6391A4CCBEEB1E52EA60DEED /* Pods-URBNSwipeableController.release.xcconfig */,
+				F5890E193768FCF95FBB6B72 /* Pods-Tests.debug.xcconfig */,
+				1542BD3C44A731B2EDB3BD28 /* Pods-Tests.release.xcconfig */,
+				0D9F92461CA5875A1A9C564D /* Pods-URBNSwipeableController.debug.xcconfig */,
+				2365B92EC61BD8E62B1608F3 /* Pods-URBNSwipeableController.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -209,11 +209,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "URBNSwipeableController" */;
 			buildPhases = (
-				8E148C8F6CBE6C89699008CE /* Check Pods Manifest.lock */,
+				06F3033FE13230F9012FC057 /* 📦 Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				2E083CBB058E3680F269B2E3 /* Copy Pods Resources */,
+				1B8997CA2710117CE6CDD60B /* 📦 Embed Pods Frameworks */,
+				828D6D87992FAE3F70532947 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,11 +229,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
-				BC8E616D832413165B482E49 /* Check Pods Manifest.lock */,
+				F720B763F660537B0E1BC410 /* 📦 Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				94EB781F1F6F06F48290F4A2 /* Copy Pods Resources */,
+				D2ABB0DFDCB671EEBE70D23E /* 📦 Embed Pods Frameworks */,
+				B4D631289D734BB3F796A7D6 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -300,29 +302,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2E083CBB058E3680F269B2E3 /* Copy Pods Resources */ = {
+		06F3033FE13230F9012FC057 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-URBNSwipeableController/Pods-URBNSwipeableController-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8E148C8F6CBE6C89699008CE /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,14 +317,44 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		94EB781F1F6F06F48290F4A2 /* Copy Pods Resources */ = {
+		1B8997CA2710117CE6CDD60B /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-URBNSwipeableController/Pods-URBNSwipeableController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		828D6D87992FAE3F70532947 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-URBNSwipeableController/Pods-URBNSwipeableController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4D631289D734BB3F796A7D6 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,14 +362,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BC8E616D832413165B482E49 /* Check Pods Manifest.lock */ = {
+		D2ABB0DFDCB671EEBE70D23E /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F720B763F660537B0E1BC410 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,7 +527,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D9FE74E76FCA0A2BB18C0F1 /* Pods-URBNSwipeableController.debug.xcconfig */;
+			baseConfigurationReference = 0D9F92461CA5875A1A9C564D /* Pods-URBNSwipeableController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -510,7 +542,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6391A4CCBEEB1E52EA60DEED /* Pods-URBNSwipeableController.release.xcconfig */;
+			baseConfigurationReference = 2365B92EC61BD8E62B1608F3 /* Pods-URBNSwipeableController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -525,7 +557,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEF7181DA52B720574AFF78A /* Pods-Tests.debug.xcconfig */;
+			baseConfigurationReference = F5890E193768FCF95FBB6B72 /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/URBNSwipeableController.app/URBNSwipeableController";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -548,7 +580,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E97CF9EDF38F12024FE461F /* Pods-Tests.release.xcconfig */;
+			baseConfigurationReference = 1542BD3C44A731B2EDB3BD28 /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/URBNSwipeableController.app/URBNSwipeableController";
 				FRAMEWORK_SEARCH_PATHS = (

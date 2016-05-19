@@ -1,25 +1,19 @@
 {
   "name": "URBNSwipeableController",
-  "version": "0.1.0",
-  "summary": "A short description of URBNSwipeableController.",
-  "description": "                       An optional longer description of URBNSwipeableController\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/URBNSwipeableController",
+  "version": "0.2.4",
+  "summary": "URBNSwipeableController allows you to add swiping to any tableviewcell, collectionviewcell, or any old view.",
+  "homepage": "https://github.com/urbn/URBNDataSource",
   "license": "MIT",
   "authors": {
-    "Joe Ridenour": "jridenour@mercury.io"
+    "URBN": "mobileteam@urbn.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/URBNSwipeableController.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/urbn/URBNSwipeableController.git",
+    "tag": "0.2.4"
   },
   "platforms": {
     "ios": "7.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "URBNSwipeableController": [
-      "Pod/Assets/*.png"
-    ]
-  }
+  "source_files": "Pod/Classes/**/*.{h,m}"
 }
