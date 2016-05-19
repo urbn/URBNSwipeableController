@@ -24,5 +24,5 @@ extern NSString * const kSwiperControllerBasementDidDisappear;
  *  Call this on any view to swiperize it
  */
 - (URBNSwipeableController *)urbn_swiperize;
-
+- (URBNSwipeableController *)urbn_swiperizeWithBasementWidth:(CGFloat)basementWidth;
 @end

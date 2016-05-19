@@ -45,7 +45,7 @@
 /**
  *  Create a new swiper controller using the given view.
  */
-+ (instancetype)swiperCellWithContainer:(UIView *)container;
++ (instancetype)swiperCellWithContainer:(UIView *)container width:(CGFloat)width;
 + (void)closeBasements;
 - (void)openBasementAnimated:(BOOL)animated;
 - (void)closeBasementAnimated:(BOOL)animated;
