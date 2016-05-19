@@ -18,6 +18,10 @@ NSString * const kSwiperControllerBasementDidDisappear = @"kSwiperControllerBase
 static NSString * kUIViewSwiperControllerKey = @"kUIViewSwiperControllerKey";
 
 - (URBNSwipeableController *)urbn_swiperize {
+    [self urbn_swiperizeWithBasementWidth:100.f];
+}
+
+- (URBNSwipeableController *)urbn_swiperizeWithBasementWidth:(CGFloat)basementWidth {
     
     // Do not swiperize if we're alredy swiperized.
     if (self.urbn_swiperController) {
@@ -27,7 +31,7 @@ static NSString * kUIViewSwiperControllerKey = @"kUIViewSwiperControllerKey";
     /**
      *  Create our swiperController and assign it to our property.
      */
-    URBNSwipeableController *c = [URBNSwipeableController swiperCellWithContainer:self];
+    URBNSwipeableController *c = [URBNSwipeableController swiperCellWithContainer:self width:basementWidth];
     [self setUrbn_swiperController:c];
     return c;
 }

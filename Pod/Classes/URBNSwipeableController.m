@@ -28,10 +28,10 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
 @implementation URBNSwipeableController
 
 #pragma mark - Public Methods
-+ (instancetype)swiperCellWithContainer:(UIView *)container {
++ (instancetype)swiperCellWithContainer:(UIView *)container width:(CGFloat)width {
     URBNSwipeableController *cell = [[[self class] alloc] init];
     cell.container = container;
-    [cell sharedInit];
+    [cell sharedInitWithBasementWidth:width];
     return cell;
 }
 
@@ -50,7 +50,7 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
 }
 
 #pragma mark - Init
-- (void)sharedInit {
+- (void)sharedInitWithBasementWidth:(CGFloat)width {
     UIScrollView *sv = [[UIScrollView alloc] initWithFrame:self.container.bounds];
     sv.showsHorizontalScrollIndicator =
     sv.showsVerticalScrollIndicator = NO;
@@ -66,7 +66,7 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
     cv.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     [sv addSubview:cv];
     
-    UIView *bv = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100.f, self.container.bounds.size.height)];
+    UIView *bv = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, self.container.bounds.size.height)];
     [sv addSubview:bv];
     
     self.basementView = bv;
