@@ -1,9 +1,7 @@
 PODS:
-  - FBSnapshotTestCase (1.6)
   - URBNSwipeableController (0.2.4)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase
   - URBNSwipeableController (from `../`)
 
 EXTERNAL SOURCES:
@@ -11,9 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 9d5fe43b29ae3a0ed8fc829477971b281038f748
   URBNSwipeableController: 09848075f8d2dce53c300f1bfdbff0909d256a5a
 
-PODFILE CHECKSUM: 29e43209c038bd30f4689d42dba9d446bece9749
+PODFILE CHECKSUM: 94c104e98faabd9f6adcdd4aa07a23276e7e2db5
 
 COCOAPODS: 1.0.0

@@ -4,8 +4,6 @@ target 'URBNSwipeableController' do
   pod "URBNSwipeableController", :path => "../"
   target 'Tests' do
     inherit! :search_paths
-
-    pod 'FBSnapshotTestCase'
   end
 
 end
