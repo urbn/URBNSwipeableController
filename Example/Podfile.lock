@@ -1,15 +1,15 @@
 PODS:
-  - URBNSwipeableController (0.2.4)
+  - URBNSwipeableController (0.2.5)
 
 DEPENDENCIES:
   - URBNSwipeableController (from `../`)
 
 EXTERNAL SOURCES:
   URBNSwipeableController:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  URBNSwipeableController: 09848075f8d2dce53c300f1bfdbff0909d256a5a
+  URBNSwipeableController: e34d556136176002f645589d4cdddfaf369584cd
 
 PODFILE CHECKSUM: 94c104e98faabd9f6adcdd4aa07a23276e7e2db5
 
