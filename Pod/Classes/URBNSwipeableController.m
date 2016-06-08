@@ -158,7 +158,7 @@ static NSString * const kSwiperControllerCloseAllKey = @"kSwiperControllerCloseA
     /// `automaticallyAdjust`
     self.scrollView.contentInset = UIEdgeInsetsZero;
     self.scrollView.frame = CGRectMake(0, 0, w, h);
-    self.scrollView.contentSize = CGSizeMake(w + [self basementWidth], h);
+    self.scrollView.contentSize = CGSizeMake(w + [self basementWidth], 0);
     self.basementView.frame = CGRectMake(w, 0, [self basementWidth], h);
     self.scrollContentView.frame = CGRectMake(0, 0, w, h);
 }
