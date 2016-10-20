@@ -1,5 +1,5 @@
 PODS:
-  - URBNSwipeableController (0.2.5)
+  - URBNSwipeableController (0.2.7)
 
 DEPENDENCIES:
   - URBNSwipeableController (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  URBNSwipeableController: e34d556136176002f645589d4cdddfaf369584cd
+  URBNSwipeableController: 7fcba9ee6954e7958034cc23a0bbc8455cb0c7a4
 
 PODFILE CHECKSUM: 94c104e98faabd9f6adcdd4aa07a23276e7e2db5
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.1.1
