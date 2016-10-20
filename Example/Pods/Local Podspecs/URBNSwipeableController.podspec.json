@@ -1,6 +1,6 @@
 {
   "name": "URBNSwipeableController",
-  "version": "0.2.5",
+  "version": "0.2.7",
   "summary": "URBNSwipeableController allows you to add swiping to any tableviewcell, collectionviewcell, or any old view.",
   "homepage": "https://github.com/urbn/URBNSwipeableController",
   "license": "MIT",
@@ -9,7 +9,7 @@
   },
   "source": {
     "git": "https://github.com/urbn/URBNSwipeableController.git",
-    "tag": "0.2.5"
+    "tag": "0.2.7"
   },
   "platforms": {
     "ios": "7.0"
